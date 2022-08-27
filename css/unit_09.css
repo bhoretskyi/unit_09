@@ -212,6 +212,27 @@ grid-area: main;
     grid-area: footer;}
 
 /* =============== task 3 ============================= */
+.out-3 {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "aside-1 aside-2"
+    "aside-3 aside-4"
+    "footer footer";
+    grid-gap: 5px;
+    margin: 0;
+    grid-template-rows: 50px 200px 200px 50px;
+    grid-template-columns: 1fr 50% ;
+
+
+
+}
+.out-3 header {
+    grid-area: header;
+}
+.out-3 footer {
+    grid-area: footer;
+}
 
 /* =============== task 4 ============================= */
 
