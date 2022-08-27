@@ -134,32 +134,82 @@ p {
 /* =============== task 1 ============================= */
 
 .out-1 {
-    /* display: grid; */
-    /* grid-template-areas:  */
+    display: grid;
+   grid-template-areas: 
+   "header header"
+   "aside main"
+   "footer footer";
   
-    /* grid-gap: 10px; */
-    /* margin: 0; */
+    grid-gap: 10px;
+   margin: 0;
+   grid-template-rows: 50px 200px 50px   ;
+   grid-template-columns: 25% 1fr;
     /* grid-template-rows:  */
     /* grid-template-columns:  */
 }
 
 .out-1 header {
-}
+    grid-area: header;
+
+}   
 
 .out-1 main {
+grid-area: main;    
 }
 
 .out-1 aside {
+    grid-area: aside;
+    
 }
 
 
 .out-1 footer {
+    grid-area: footer   ;
+    
  }
 
  /* =============== task 2 ============================= */
 
 .out-2 {
+    display: grid;
+        grid-template-areas:
+            "header header header"
+            "aside main aside-2"
+            "footer footer footer";
+    
+        grid-gap: 5px;
+        margin: 0;
+        grid-template-rows: 50px 200px 50px;
+        grid-template-columns: 25% 1fr 25%;
+        /* grid-template-rows:  */
+
+        
 }
+.out-2 header {
+    grid-area: header;
+
+}
+
+.out-2 main {
+    grid-area: main;
+}
+
+.out-2 aside {
+    grid-area: aside;
+    
+    
+    
+    
+
+}
+.out-2  .aside-2 {
+    grid-area: aside-2;
+   
+    }
+
+
+.out-2 footer {
+    grid-area: footer;}
 
 /* =============== task 3 ============================= */
 
