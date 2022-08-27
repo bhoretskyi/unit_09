@@ -235,6 +235,54 @@ grid-area: main;
 }
 
 /* =============== task 4 ============================= */
+.out-4 {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-areas: 
+    "header header"
+    "aside-1 aside-2"
+    "aside-3 aside-4"
+    "footer footer";
+        grid-gap: 5px;
+        margin: 0;
+        grid-template-rows: 50px 200px 200px 50px;
+        
+        
+        
+        
+}
+.out-4 header {
+    grid-area: header;
+    grid-column-start: 1;
+        grid-column-end: 4;
+}
+.out-4 .news-1 {
+    grid-area: aside-1;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+}
+.out-4 .news-2 {
+    grid-area: aside-2;
+    grid-column-start: 3;
+        grid-column-end: 4;
+    
+}
+.out-4 .news-3 {
+    grid-area: aside-3;
+    grid-column-start: 1;
+        grid-column-end: 2;
+}
+.out-4 .news-4 {
+    grid-area: aside-4;
+    grid-column-start: 2;
+        grid-column-end: 4;
+}
+.out-4 footer {
+    grid-area: footer;
+    grid-column-start: 1;
+        grid-column-end: 4;
+}
 
 /* =============== task 5 ============================= */
 
