@@ -285,8 +285,46 @@ grid-area: main;
 }
 
 /* =============== task 5 ============================= */
+.out-5 {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "news-1 news-2 news-3"
+    "footer footer footer";
+    grid-gap: 5px;
+    grid-template-rows: 50px 200px 200px 50px;
+}
+.out-5 header {
+    grid-area: header;
+}
+.out-5 .news-1 {
+    grid-area: main;
+}
+
+.out-5 footer {
+    grid-area: footer;
+}
+
 
 /* =============== task 6 ============================= */
+.out-6 {
+    display: grid;
+    grid-template-columns: repeat(3);
+    grid-template-areas: 
+    "header header-2 header-3"
+    "main main main"
+    "news-1 news-2 news-3"
+    "footer footer footer";
+    grid-gap: 5px;
+    grid-template-rows: 50px 200px 200px 50px;
+
+}
+.out-5 header {
+    grid-area: header-2 ;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
 
 /* =============== task 7 ============================= */
 
