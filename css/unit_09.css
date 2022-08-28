@@ -298,33 +298,52 @@ grid-area: main;
 .out-5 header {
     grid-area: header;
 }
-.out-5 .news-1 {
-    grid-area: main;
-}
+
 
 .out-5 footer {
     grid-area: footer;
 }
+.out-5 .news-1 {
+    grid-area: main;
+}
+.out-5 .news-2 {
+    grid-area: news-1;
+}
 
+.out-5 .news-3 {
+    grid-area: news-2;
+}
+
+.out-5 .news-4 {
+    grid-area: news-3;
+
+}
 
 /* =============== task 6 ============================= */
 .out-6 {
     display: grid;
-    grid-template-columns: repeat(3);
+    
     grid-template-areas: 
-    "header header-2 header-3"
-    "main main main"
-    "news-1 news-2 news-3"
-    "footer footer footer";
+    "aside header header"
+    "aside main-1 main-2"
+    "aside footer footer";
     grid-gap: 5px;
-    grid-template-rows: 50px 200px 200px 50px;
+    grid-template-rows: 50px 200px  50px;
+    
+}
+.out-6 .aside {
+    grid-area: aside;
+}
+.out-6 header {
+    grid-area: header;
+}
+.out-6 article {
+    grid-area: main-1;
+}
+.out-6 footer {
+    grid-area: footer;
+}
 
-}
-.out-5 header {
-    grid-area: header-2 ;
-    grid-column-start: 2;
-    grid-column-end: 4;
-}
 
 /* =============== task 7 ============================= */
 
