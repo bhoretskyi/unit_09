@@ -346,6 +346,39 @@ grid-area: main;
 
 
 /* =============== task 7 ============================= */
+.out-7 {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "news-1 news-2 xxx"
+    "news-3 news-4 news-5"
+    "footer footer footer";
+    grid-gap: 5px;
+    grid-template-rows: 50px 50px 50px 50px;
+}
+.out-7 header {
+    grid-area: header   ;
+}
+.out-7 .news-1 {
+    grid-area: news-1;
+}
+.out-7 .news-2 {
+    grid-area: news-2;
+}
+.out-7 .news-3 {
+    grid-area: news-3;
+}
+.out-7 .news-4 {
+    grid-area: news-4;
+}
+.out-7 .news-5 {
+    grid-area: news-5;
+}
+.out-7 footer {
+    grid-area: footer;
+}
+
+
 
 /* =============== task 8 ============================= */
 
